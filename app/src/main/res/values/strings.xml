@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EventApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+        <string name="text_more">More</string>
+        <string name="text_power_connected">Power connected</string>
+        <string name="text_power_disconnected">Power disconnected</string>
+        <string name="text_screen_on">Screen on</string>
+        <string name="text_screen_off">Screen off</string>
+        <string name="text_battery_okay">Battery full</string>
+        <string name="text_battery_low">Battery low</string>
+        <string name="text_time_changed">Time changed</string>
+        <string name="text_share_title">Share</string>
+        <string name="text_airplane">Airplane mode</string>
+    </resources>

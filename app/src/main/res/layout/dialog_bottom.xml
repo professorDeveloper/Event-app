@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom_sheet_dialog"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/line"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_bottom_sheet_dialog_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/line">
+
+        <TextView
+            android:id="@+id/buttonEnableAllEvents"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Enable all events"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_enable" />
+
+        <TextView
+            android:id="@+id/buttonDisableAllEvents"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Disable all events"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_disable" />
+        <TextView
+            android:id="@+id/buttonAudioSetting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Audio Settings"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_audiotrack_24" />
+
+
+        <TextView
+            android:id="@+id/buttonShare"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Share app"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_share" />
+
+        <TextView
+            android:id="@+id/buttonRate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Rate app"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_rate" />
+
+        <TextView
+            android:id="@+id/buttonQuit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="?selectableItemBackground"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Quit app"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_quit" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

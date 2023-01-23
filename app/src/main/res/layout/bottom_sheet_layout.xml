@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Audioni Tanlang"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:id="@+id/f18"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anna's voice"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            android:id="@+id/f22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jack's voice"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/f25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robot`s voice"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        app:cornerRadius="15dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/purple_500"
+
+        android:text="Saqlash"
+        app:background="?selectableItemBackground" />
+
+</LinearLayout>

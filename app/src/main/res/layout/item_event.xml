@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:background="?selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:background="#1A000000"
+            android:id="@+id/imageEvent"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:contentPadding="12dp"
+            android:backgroundTint="@color/purple_500"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            tools:src="@drawable/ic_screen_off" />
+
+        <TextView
+            android:id="@+id/textEvent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="16sp"
+            tools:text="@tools:sample/lorem/random" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/statusEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
